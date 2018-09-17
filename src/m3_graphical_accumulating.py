@@ -169,23 +169,20 @@ def draw_lines(n, point, window):
       :type point: rg.Point
       :type window: rg.RoseWindow
     """
-
+    nex = 100
+    mod = 200//n
     if n >= 2:
         start = rg.Point(point.x, point.y)
-        end = rg.Point((point.x + 100), point.y + 100)
-    for k in range((n+1) // 2):
-            linus = rg.Line(start, end)
+        end = rg.Point((point.x + 100), point.y)
+    for k in range(n):
+            linus = rg.Line(start, rg.Point(end.x, end.y + nex))
             linus.attach_to(window)
             window.render()
-    for k in range((n+1) // 2):
-            end.y = point.y - 100
-            linus = rg.Line(start, end)
-            linus.attach_to(window)
-            window.render()
+            nex = nex - mod
 
-STUCK
+
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #          Tests have been written for you (above).
     #
     # CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,

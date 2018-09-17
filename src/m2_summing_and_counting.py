@@ -127,7 +127,7 @@ def run_test_count_sines_from():
     print('--------------------------------------------------')
 
     # Test 1:
-    expected = 5
+    expected = -1.441903775
     answer = count_sines_from(3, 9)
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
@@ -138,23 +138,23 @@ def run_test_count_sines_from():
     # ------------------------------------------------------------------
     expect1 = -.615682
     answer1 = count_sines_from(2, 4)
-    print('Test 1 expected:', expected)
-    print('       actual:  ', answer)
+    print('Test 2 expected:', expect1)
+    print('       actual:  ', answer1)
     expect2 = -1.574606762
     answer2 = count_sines_from(3, 5)
-    print('Test 2 expected:', expect2)
+    print('Test 3 expected:', expect2)
     print('       actual:  ', answer2)
     expect3 = -1.995142268
     answer3 = count_sines_from(4, 8)
-    print('Test 3 expected:', expect3)
+    print('Test 4 expected:', expect3)
     print('       actual:  ', answer3)
     expect4 = -2.080584236
     answer4 = count_sines_from(10, 12)
-    print('Test 4 expected:', expect4)
+    print('Test 5 expected:', expect4)
     print('       actual:  ', answer4)
     expect5 = -1.893001826
     answer5 = count_sines_from(20, 25)
-    print('Test 5 expected:', expect5)
+    print('Test 6 expected:', expect5)
     print('       actual:  ', answer5)
 
 
